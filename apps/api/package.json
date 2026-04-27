@@ -4,20 +4,27 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
+    "dev": "dotenv -e ../../.env -- tsx watch src/index.ts",
     "build": "tsc",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "db:generate": "dotenv -e ../../.env -- drizzle-kit generate",
+    "db:migrate": "dotenv -e ../../.env -- tsx src/db/migrate.ts",
+    "db:studio": "dotenv -e ../../.env -- drizzle-kit studio"
   },
   "dependencies": {
     "@ai-support-bot/schemas": "workspace:*",
     "hono": "^4.3.0",
     "@hono/node-server": "^1.11.0",
     "zod": "^3.23.0",
-    "dotenv": "^16.4.0"
+    "dotenv": "^16.4.0",
+    "pg": "^8.11.0",
+    "drizzle-orm": "^0.30.0"
   },
   "devDependencies": {
     "tsx": "^4.11.0",
     "@types/node": "^20.0.0",
-    "typescript": "^5.4.0"
+    "typescript": "^5.4.0",
+    "drizzle-kit": "^0.21.0",
+    "@types/pg": "^8.11.0"
   }
 }
