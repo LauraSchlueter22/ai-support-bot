@@ -1,0 +1,23 @@
+{
+  "name": "@ai-support-bot/api",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ai-support-bot/schemas": "workspace:*",
+    "hono": "^4.3.0",
+    "@hono/node-server": "^1.11.0",
+    "zod": "^3.23.0",
+    "dotenv": "^16.4.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.11.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  }
+}
