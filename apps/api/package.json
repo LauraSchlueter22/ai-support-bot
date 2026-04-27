@@ -13,18 +13,23 @@
   },
   "dependencies": {
     "@ai-support-bot/schemas": "workspace:*",
-    "hono": "^4.3.0",
     "@hono/node-server": "^1.11.0",
-    "zod": "^3.23.0",
+    "@hono/zod-validator": "^0.7.6",
+    "bcrypt": "^6.0.0",
     "dotenv": "^16.4.0",
+    "drizzle-orm": "^0.45.2",
+    "hono": "^4.3.0",
+    "jsonwebtoken": "^9.0.3",
     "pg": "^8.11.0",
-    "drizzle-orm": "^0.30.0"
+    "zod": "^3.23.0"
   },
   "devDependencies": {
-    "tsx": "^4.11.0",
+    "@types/bcrypt": "^6.0.0",
+    "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^20.0.0",
-    "typescript": "^5.4.0",
-    "drizzle-kit": "^0.21.0",
-    "@types/pg": "^8.11.0"
+    "@types/pg": "^8.11.0",
+    "drizzle-kit": "^0.31.10",
+    "tsx": "^4.11.0",
+    "typescript": "^5.4.0"
   }
 }
