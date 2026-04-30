@@ -4,6 +4,7 @@ import { logger } from "hono/logger";
 import { cors } from "hono/cors";
 import authRoutes from "./routes/auth.routes.js";
 import documentRoutes from "./routes/document.routes.js";
+import chatRoutes from "./routes/chat.routes.js";
 
 const app = new Hono();
 
@@ -16,6 +17,7 @@ app.get("/health", (c) => {
 
 app.route("/auth", authRoutes);
 app.route("/documents", documentRoutes);
+app.route("/chat", chatRoutes);
 
 const port = Number(process.env.PORT) || 3001;
 console.log(`API running on http://localhost:${port}`);
