@@ -15,6 +15,7 @@
     "@ai-support-bot/schemas": "workspace:*",
     "@hono/node-server": "^1.11.0",
     "@hono/zod-validator": "^0.7.6",
+    "ai": "^6.0.170",
     "bcrypt": "^6.0.0",
     "dotenv": "^16.4.0",
     "drizzle-orm": "0.45.2",
