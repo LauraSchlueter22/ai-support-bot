@@ -31,7 +31,7 @@ export async function retrieveRelevantChunks(
         LIMIT ${MAX_CHUNKS}
         `);
 
-  return results.row as RetrievedChunk[];
+  return results.rows as RetrievedChunk[];
 }
 
 export function buildSystemPrompt(chunks: RetrievedChunk[]): string {
